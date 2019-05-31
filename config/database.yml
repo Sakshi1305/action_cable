@@ -19,13 +19,14 @@ default: &default
   encoding: unicode
   username: postgres
   password: postgres
+  host: localhost
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: action-cable-online-chat_development
+  database: action_cable_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

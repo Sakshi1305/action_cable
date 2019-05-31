@@ -30,3 +30,4 @@ For prodction envinornment also include redis
 
 Install Gem:
 bundle install
+# action_cable
